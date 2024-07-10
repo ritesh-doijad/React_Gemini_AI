@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    font-family: Outfit;
+}
+
+.result-overflow{
+    overflow-y:auto;
+}
+.result-overflow::-webkit-scrollbar{
+    display: none;
+}
+.gradient-text {
+    background: linear-gradient(16deg, #5082ED, #D56676);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.loading-color{
+    border-radius: 4px;
+    border: none;
+    height: 10px;
+    background-color: #1E1F20;
+    background: linear-gradient(to right,#b7bbbe, #6276a0, #5082ED,#7693d1 );
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
